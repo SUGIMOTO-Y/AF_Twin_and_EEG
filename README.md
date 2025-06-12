@@ -1,5 +1,5 @@
 # AF-Twin and AF-EEG
-![fig1](fig1.png)
+![fig1](overview.png)
 This is the Pytorch implementation of this paper: **Cross-subject EEG-based Visual Object Recognition: A Contrastive and Transfer Learning Approach**
 	
 Yuma Sugimoto<sup>1</sup>, Genci Capi<sup>2</sup>
