@@ -1,4 +1,4 @@
-## AF_Twin_and_EEG
+
 This is the Pytorch implementation of this paper: **Cross-subject EEG-based Visual Object Recognition: A Contrastive and Transfer Learning Approach**
 	
 Yuma Sugimoto<sup>1</sup>, Genci Capi<sup>2</sup>
@@ -7,17 +7,17 @@ Yuma Sugimoto<sup>1</sup>, Genci Capi<sup>2</sup>
 
 <sup>2</sup>the Department of Mechanical Engineering, Hosei University, Koganei, Tokyo, Japan.
 ***
-# Requirements
+## Requirements
 * Ubuntu==20.04.6 LTS
 * Python==3.8.10
 * CUDA==12.4
-## Install
+### Install
 * pytorch==2.2.2
 * numpy==1.24.4
 * omegaconf==2.3.0
 
 ***
-Start
+## Start
 ```bash
 $ python -m Main -s 1 -a 0
 ```
