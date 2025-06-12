@@ -19,10 +19,11 @@ Yuma Sugimoto<sup>1</sup>, Genci Capi<sup>2</sup>
 ***
 Start
 '''bash
-python -m Main -s 1 -a 0
+$ python -m Main -s 1 -a 0
 '''
 
 '''bash
+$ python -m Main -h
 usage: Main.py [-h] [-s SUBJECT] [-a ADAPTER_MODE]
 
 optional arguments:
