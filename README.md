@@ -29,7 +29,8 @@ The Things-EEG2 dataset can be downloaded following the official links. They are
 ```bash
 $ python -m Main -s 1 -a 0
 ```
-
+* '-s' argument means the target subject.
+* '-a' argument manages which uses AF-Twin or AF-EEG (0.AF-Twin, 1.AF-EEG).
 ```bash
 $ python -m Main -h
 usage: Main.py [-h] [-s SUBJECT] [-a ADAPTER_MODE]
