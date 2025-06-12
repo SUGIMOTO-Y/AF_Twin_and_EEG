@@ -1,0 +1,8 @@
+
+Train:
+  latent_dim : 768
+  
+Adapter_Mode : 'parallel' #'sequential' or 'parallel'
+Adapter_Size : 256 #256, 64, 16 or 1
+Pretrain : True
+Adapter : True

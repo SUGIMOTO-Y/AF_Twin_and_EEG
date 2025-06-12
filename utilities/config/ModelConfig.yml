@@ -1,0 +1,21 @@
+Model: 
+  EEGViT:
+    Tpatch_size: 6
+    Cpatch_size: 2
+    width: 
+    layers: 12
+    heads: 6
+
+  IMGViT:
+    input_resolution : 0
+    patch_size : 16
+    width: 
+    layers: 12
+    heads: 6
+  
+  Adapter:
+    Encoder_option: 'both'
+    down_size : 0
+    adapter_layernorm_option : in #'in' or 'out'
+    adapter_scalar : 1.0 #"learnable_scalar" or '1.0'(scaler string)
+    init_option : lora #'lora' or 'bert'
