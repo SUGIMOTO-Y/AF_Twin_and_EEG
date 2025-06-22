@@ -16,20 +16,22 @@ The Things-EEG2 dataset can be downloaded following the official links. They are
 
 Dataset Structure requirement
 ```
-+-- example.json
-+-- index.html
-+-- index.js
-+-- package.json
-+-- package-lock.json
-+-- README.md
-\-- src
-    +-- app.js
-    +-- models.js
-    +-- routes.js
-    \-- utils
-        +-- another.js
-        +-- constants.js
-        \-- index.js
+|-- example.json
+|-- index.html
+|-- index.js
+|-- package.json
+|-- package-lock.json
+|-- README.md
+`-- src
+    |-- app.js
+    |-- models.js
+    |-- README.md
+    |-- routes.js
+    `-- utils
+        |-- another.js
+        |-- constants.js
+        |-- index.js
+        `-- README.md
 ```
 ***
 ## Requirements
