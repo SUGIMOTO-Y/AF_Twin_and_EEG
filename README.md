@@ -36,7 +36,7 @@ AF_Tiwn_and_EEG
 ## Pretraining Weights
 Please download them from the following link and unzip them in the project directory.
 * Pretraining_Weights_link
-* Be careful of its file size (over 47 GB)
+* Be careful of its file size (over 50 GB)
 
 ***
 ## Requirements
