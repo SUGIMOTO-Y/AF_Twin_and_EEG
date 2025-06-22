@@ -14,7 +14,7 @@ See Section II, Subsection C, Paragraph 1 for dataset and preprocessing details.
 The Things-EEG2 dataset can be downloaded following the official links. They are lireased by Gifford, A. T. in the [A large and rich EEG dataset for modeling human visual object recognition](https://www.sciencedirect.com/science/article/pii/S1053811922008758?via%3Dihub).
 * [Thing-EEG2](https://osf.io/3jk45/)
 
-Dataset Structure requirement
+### Dataset Structure Requirement
 ```
 AF_Tiwn_and_EEG
 └-- Preprocesssed_ThingEEGDataset
@@ -31,6 +31,10 @@ AF_Tiwn_and_EEG
     	└-- preprocessed_eeg_test.npy
     	└-- preprocessed_eeg_training.npy
 ```
+## Pretraining Weights
+Please unzip the 'PretrainingWeights' folder in the project directory.
+* Be careful of its file size (over 47 GB)
+
 ***
 ## Requirements
 * Ubuntu==20.04.6 LTS
