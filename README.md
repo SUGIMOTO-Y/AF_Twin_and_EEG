@@ -15,6 +15,7 @@ The Things-EEG2 dataset can be downloaded following the official links. They are
 * [Thing-EEG2](https://osf.io/3jk45/)
 
 Dataset Structure requirement
+```
 AF_Tiwn_and_EEG
 └-- Preprocesssed_ThingEEGDataset
     |-- sub-01
@@ -29,7 +30,7 @@ AF_Tiwn_and_EEG
     └-- sub-10
     	└-- preprocessed_eeg_test.npy
     	└-- preprocessed_eeg_training.npy
-
+```
 ***
 ## Requirements
 * Ubuntu==20.04.6 LTS
