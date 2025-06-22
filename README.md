@@ -31,6 +31,7 @@ AF_Tiwn_and_EEG
     	└-- preprocessed_eeg_test.npy
     	└-- preprocessed_eeg_training.npy
 ```
+***
 ## Pretraining Weights
 Please unzip the 'PretrainingWeights' folder in the project directory.
 * Be careful of its file size (over 47 GB)
