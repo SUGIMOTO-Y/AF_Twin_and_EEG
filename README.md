@@ -14,6 +14,23 @@ See Section II, Subsection C, Paragraph 1 for dataset and preprocessing details.
 The Things-EEG2 dataset can be downloaded following the official links. They are lireased by Gifford, A. T. in the [A large and rich EEG dataset for modeling human visual object recognition](https://www.sciencedirect.com/science/article/pii/S1053811922008758?via%3Dihub).
 * [Thing-EEG2](https://osf.io/3jk45/)
 
+Dataset Structure requirement
+```
++-- example.json
++-- index.html
++-- index.js
++-- package.json
++-- package-lock.json
++-- README.md
+\-- src
+    +-- app.js
+    +-- models.js
+    +-- routes.js
+    \-- utils
+        +-- another.js
+        +-- constants.js
+        \-- index.js
+```
 ***
 ## Requirements
 * Ubuntu==20.04.6 LTS
@@ -23,20 +40,31 @@ The Things-EEG2 dataset can be downloaded following the official links. They are
 * pytorch==2.2.2
 * numpy==1.24.4
 * omegaconf==2.3.0
+* tqdm==4.66.2
 
 ***
-## Start
+## Start Finetuning and Evaluation
 ```bash
-$ python -m Main -s 1 -a 0
+$ python -m Main -s 1 -a 0 -f True
 ```
 * '-s' argument means the target subject.
 * '-a' argument manages which uses AF-Twin or AF-EEG (0.AF-Twin, 1.AF-EEG).
 ```bash
 $ python -m Main -h
-usage: Main.py [-h] [-s SUBJECT] [-a ADAPTER_MODE]
+usage: Main.py [-h] [-s SUBJECT] [-a ADAPTER_MODE] [-f FINETUNING]
 
 optional arguments:
-  -s The target subject (from 1 to 10)
-  -a Types of AF: (0.AF-Twin, 1.AF-EEG)
+  -h, --help            show this help message and exit
+  -s SUBJECT, --subject SUBJECT
+                        The target subject (from 1 to 10)
+  -a ADAPTER_MODE, --adapter_mode ADAPTER_MODE
+                        Types of AF: (0.AF-Twin, 1.AF-EEG)
+  -f FINETUNING, --finetuning FINETUNING
+                        Finetuning on the target data or not
 ```
-
+## Start Only Evaluation
+If you would not like to finetune on the target data, please change '-f' argument to 'False'.
+* '-f' argument is whether to finetune on the target data or not.
+```bash
+$ python -m Main -s 1 -a 0 -f False
+```
