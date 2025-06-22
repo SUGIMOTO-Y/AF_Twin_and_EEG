@@ -1,6 +1,12 @@
 
 Train:
   latent_dim : 768
+  lr : 1.0e-4
+  weight_decay : 2.0e-1
+  eps : 1.0e-8
+  EPOCHS : 40
+  Checkpoint_step : 5
+  gradient_accumulation_steps : 1
   
 Adapter_Mode : 'parallel' #'sequential' or 'parallel'
 Adapter_Size : 256 #256, 64, 16 or 1

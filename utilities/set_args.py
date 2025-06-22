@@ -10,4 +10,5 @@ def set_args(args_):
     args.device =  'cuda:0' if torch.cuda.is_available() else 'cpu' 
     args.TargetSub = args_.subject
     args.Encoder_mode = 'both' if args_.adapter_mode == 0 else 'eeg'
+    args.finetuning_flag =  args_.finetuning 
     return args

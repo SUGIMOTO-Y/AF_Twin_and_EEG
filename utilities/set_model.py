@@ -34,3 +34,8 @@ def set_model(args):
             
     model = model.to(torch.device(args.device))
     return model
+
+def load_pretrain_weight(args, model):
+    PATH = os.path.join('PretrainingWeights', f'sub_{args.TargetSub}', 'pretraining_weight.pt')
+    model.load_state_dict(torch.load(PATH)['model_state_dict'], strict=False)
+    return model
