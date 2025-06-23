@@ -21,6 +21,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-s', '--subject', type=int, help='The target subject (from 1 to 10)')
     parser.add_argument('-a', '--adapter_mode', type=int, help='Types of AF: (0.AF-Twin, 1.AF-EEG)')
-    parser.add_argument('-f', '--finetuning', type=bool, help='Finetuning on the target data or not')
+    parser.add_argument('-f', '--finetuning', action='store_true', help='Finetuning on the target data or not')
     args = parser.parse_args()
     main_process(args)
