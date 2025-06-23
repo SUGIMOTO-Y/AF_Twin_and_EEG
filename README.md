@@ -34,11 +34,11 @@ AF_Tiwn_and_EEG
 ```
 ***
 ## Pretraining Weights
-Please download them from the following link and unzip them in the project directory.
+Please download pretrained weights from the following link and unzip them in the project directory.
 * [Pretraining_Weights_link](https://drive.google.com/file/d/1ANN6oq5KM1Ei9g3o862SSEbVWgvedrq6/view?usp=sharing) (over 50 GB)
 
 ***
-## Requirements
+## Enviroment
 * Ubuntu==20.04.6 LTS
 * Python==3.8.10
 * CUDA==12.4
@@ -51,9 +51,9 @@ Please download them from the following link and unzip them in the project direc
 ***
 ## Start Finetuning and Evaluation
 ```bash
-$ python -m Main -s 1 -a 0 -f True
+$ python -m Main -s 1 -a 0 -f
 ```
-* '-s' argument means the target subject.
+* '-s' argument means the target subject. (from 1 to 10)
 * '-a' argument manages which uses AF-Twin or AF-EEG (0.AF-Twin, 1.AF-EEG).
 ```bash
 $ python -m Main -h
@@ -69,8 +69,10 @@ optional arguments:
                         Finetuning on the target data or not
 ```
 ## Start Only Evaluation
-If you would not like to finetune on the target data, please change '-f' argument to 'False'.
+If you don't need to finetune the network on the target data, please remove '-f' argument from the command line.
 * '-f' argument is whether to finetune on the target data or not.
 ```bash
-$ python -m Main -s 1 -a 0 -f False
+$ python -m Main -s 1 -a 0
+
+subject: 1 | Top-1 Accuracy: 67.0 |Top-5 Accuracy:89.5
 ```
